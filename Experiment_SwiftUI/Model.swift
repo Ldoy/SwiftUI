@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
 
-class Model {
-    //Step 3 에서 활용
+class Model: ObservableObject {
+    @Published var isEnvironmentToggleOn: Bool = true
 }

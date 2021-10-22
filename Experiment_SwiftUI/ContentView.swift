@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
-        Text("빈 화면")
+        HStack(alignment: .center, spacing: 0) {
+            VStack {
+                ToggleView()
+                ToggleView()
+            }
+                
+            VStack {
+                ToggleView()
+                ToggleView()
+            }
+        }
+
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(Model())
     }
 }
